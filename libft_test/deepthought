@@ -1,0 +1,278 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+z3t4c2.42bangkok.com
+Darwin 19.6.0 x86_64
+$> date
+Mon Feb 21 23:39:41 +07 2022
+$> gcc --version
+Apple clang version 12.0.0 (clang-1200.0.32.28)
+Target: x86_64-apple-darwin19.6.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+$> clang --version
+Apple clang version 12.0.0 (clang-1200.0.32.28)
+Target: x86_64-apple-darwin19.6.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+
+$> ----- Current Setting ----
+$> gcc --version
+Apple clang version 12.0.0 (clang-1200.0.32.28)
+Target: x86_64-apple-darwin19.6.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+
+= libft.h=======================================================================
+$> norminette libft.h | grep -E '(Error|Warning)'
+
+= Compiling libft ==============================================================
+$> make re
+
+$> ls -la libft.a
+-rw-r--r--  1 kmethawa  2021_bangkok  2504 Feb 21 23:39 /Users/kmethawa/42bangkok-libft/libft_test/tmp_tests_dir/libft.a
+
+= Part1_functions ==============================================================
+
+= ft_atoi ======================================================================
+Nothing turned in
+
+= ft_bzero =====================================================================
+Nothing turned in
+
+= ft_calloc ====================================================================
+Nothing turned in
+
+= ft_isalnum ===================================================================
+$> norminette ft_isalnum.c | grep -E '(Error|Warning)'
+$> gcc -Wextra -Wall -Werror /Users/kmethawa/42bangkok-libft/libft_test/tests/Part1_functions/ft_isalnum/main.c -L/Users/kmethawa/42bangkok-libft/libft_test/tmp_tests_dir -lft -I/Users/kmethawa/42bangkok-libft/libft_test/tmp_tests_dir
+
+= Test 1 ===================================================
+$> ./user_exe 01
+$> diff -U 3 user_output_test01 test01.output
+
+Diff OK :D
+= Test 2 ===================================================
+$> ./user_exe 02
+$> diff -U 3 user_output_test02 test02.output
+
+Diff OK :D
+= Test 3 ===================================================
+$> ./user_exe 03
+$> diff -U 3 user_output_test03 test03.output
+
+Diff OK :D
+= Test 4 ===================================================
+$> ./user_exe 04
+$> diff -U 3 user_output_test04 test04.output
+
+Diff OK :D
+= Test 5 ===================================================
+$> ./user_exe 05
+$> diff -U 3 user_output_test05 test05.output
+
+Diff OK :D
+= Test 6 ===================================================
+$> ./user_exe 06
+$> diff -U 3 user_output_test06 test06.output
+
+Diff OK :D
+= Test 7 ===================================================
+$> ./user_exe 07
+$> diff -U 3 user_output_test07 test07.output
+
+Diff OK :D
+
+= ft_isalpha ===================================================================
+$> norminette ft_isalpha.c | grep -E '(Error|Warning)'
+$> gcc -Wextra -Wall -Werror /Users/kmethawa/42bangkok-libft/libft_test/tests/Part1_functions/ft_isalpha/main.c -L/Users/kmethawa/42bangkok-libft/libft_test/tmp_tests_dir -lft -I/Users/kmethawa/42bangkok-libft/libft_test/tmp_tests_dir
+
+= Test 1 ===================================================
+$> ./user_exe 01
+$> diff -U 3 user_output_test01 test01.output
+
+Diff OK :D
+= Test 2 ===================================================
+$> ./user_exe 02
+$> diff -U 3 user_output_test02 test02.output
+
+Diff OK :D
+= Test 3 ===================================================
+$> ./user_exe 03
+$> diff -U 3 user_output_test03 test03.output
+
+Diff OK :D
+= Test 4 ===================================================
+$> ./user_exe 04
+$> diff -U 3 user_output_test04 test04.output
+
+Diff OK :D
+= Test 5 ===================================================
+$> ./user_exe 05
+$> diff -U 3 user_output_test05 test05.output
+
+Diff OK :D
+= Test 6 ===================================================
+$> ./user_exe 06
+$> diff -U 3 user_output_test06 test06.output
+
+Diff OK :D
+= Test 7 ===================================================
+$> ./user_exe 07
+$> diff -U 3 user_output_test07 test07.output
+
+Diff OK :D
+
+= ft_isascii ===================================================================
+Nothing turned in
+
+= ft_isdigit ===================================================================
+$> norminette ft_isdigit.c | grep -E '(Error|Warning)'
+$> gcc -Wextra -Wall -Werror /Users/kmethawa/42bangkok-libft/libft_test/tests/Part1_functions/ft_isdigit/main.c -L/Users/kmethawa/42bangkok-libft/libft_test/tmp_tests_dir -lft -I/Users/kmethawa/42bangkok-libft/libft_test/tmp_tests_dir
+
+= Test 1 ===================================================
+$> ./user_exe 01
+$> diff -U 3 user_output_test01 test01.output
+
+Diff OK :D
+= Test 2 ===================================================
+$> ./user_exe 02
+$> diff -U 3 user_output_test02 test02.output
+
+Diff OK :D
+= Test 3 ===================================================
+$> ./user_exe 03
+$> diff -U 3 user_output_test03 test03.output
+
+Diff OK :D
+= Test 4 ===================================================
+$> ./user_exe 04
+$> diff -U 3 user_output_test04 test04.output
+
+Diff OK :D
+= Test 5 ===================================================
+$> ./user_exe 05
+$> diff -U 3 user_output_test05 test05.output
+
+Diff OK :D
+= Test 6 ===================================================
+$> ./user_exe 06
+$> diff -U 3 user_output_test06 test06.output
+
+Diff OK :D
+= Test 7 ===================================================
+$> ./user_exe 07
+$> diff -U 3 user_output_test07 test07.output
+
+Diff OK :D
+
+= ft_isprint ===================================================================
+Nothing turned in
+
+= ft_memchr ====================================================================
+Nothing turned in
+
+= ft_memcmp ====================================================================
+Nothing turned in
+
+= ft_memcpy ====================================================================
+Nothing turned in
+
+= ft_memmove ===================================================================
+Nothing turned in
+
+= ft_memset ====================================================================
+Nothing turned in
+
+= ft_strchr ====================================================================
+Nothing turned in
+
+= ft_strdup ====================================================================
+Nothing turned in
+
+= ft_strlcat ===================================================================
+Nothing turned in
+
+= ft_strlcpy ===================================================================
+Nothing turned in
+
+= ft_strlen ====================================================================
+Nothing turned in
+
+= ft_strncmp ===================================================================
+Nothing turned in
+
+= ft_strnstr ===================================================================
+Nothing turned in
+
+= ft_strrchr ===================================================================
+Nothing turned in
+
+= ft_tolower ===================================================================
+Nothing turned in
+
+= ft_toupper ===================================================================
+Nothing turned in
+
+= Part2_functions ==============================================================
+
+= ft_itoa ======================================================================
+Nothing turned in
+
+= ft_putchar_fd ================================================================
+Nothing turned in
+
+= ft_putendl_fd ================================================================
+Nothing turned in
+
+= ft_putnbr_fd =================================================================
+Nothing turned in
+
+= ft_putstr_fd =================================================================
+Nothing turned in
+
+= ft_split =====================================================================
+Nothing turned in
+
+= ft_strjoin ===================================================================
+Nothing turned in
+
+= ft_strmapi ===================================================================
+Nothing turned in
+
+= ft_striteri ==================================================================
+Nothing turned in
+
+= ft_strtrim ===================================================================
+Nothing turned in
+
+= ft_substr ====================================================================
+Nothing turned in
+
+= Bonus_functions ==============================================================
+
+= ft_lstadd_back ===============================================================
+Nothing turned in
+
+= ft_lstadd_front ==============================================================
+Nothing turned in
+
+= ft_lstclear ==================================================================
+Nothing turned in
+
+= ft_lstdelone =================================================================
+Nothing turned in
+
+= ft_lstiter ===================================================================
+Nothing turned in
+
+= ft_lstlast ===================================================================
+Nothing turned in
+
+= ft_lstmap ====================================================================
+Nothing turned in
+
+= ft_lstnew ====================================================================
+Nothing turned in
+
+= ft_lstsize ===================================================================
+Nothing turned in
