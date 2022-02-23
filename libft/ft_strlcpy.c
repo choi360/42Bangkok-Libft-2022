@@ -6,7 +6,7 @@
 /*   By: kmethawa <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/24 00:29:31 by kmethawa          #+#    #+#             */
-/*   Updated: 2022/02/24 01:14:52 by kmethawa         ###   ########.fr       */
+/*   Updated: 2022/02/24 01:27:16 by kmethawa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,4 +42,3 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 	return (srcsize);
 }
 */
-
