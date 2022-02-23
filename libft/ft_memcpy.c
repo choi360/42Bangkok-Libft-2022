@@ -1,36 +1,43 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kmethawa <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/02/23 18:31:42 by kmethawa          #+#    #+#             */
-/*   Updated: 2022/02/23 21:34:03 by kmethawa         ###   ########.fr       */
+/*   Created: 2022/02/23 21:32:49 by kmethawa          #+#    #+#             */
+/*   Updated: 2022/02/23 21:58:14 by kmethawa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memset(void *b, int c, size_t len)
+void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
-	unsigned char	*p;
+	char		*d;
+	const char	*s;
 
-	p = b;
-	while (len-- != 0)
-		*p++ = c;
-	return (b);
+	d = dst;
+	s = src;
+	while (n)
+	{
+		*d++ = *s++;
+		n--;
+	}
+	return (dst);
 }
 /*
-void	*ft_memset(void *b, int c, size_t len)
+void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
-	size_t			i;
-	unsigned char	*p;
+	unsigned char	*pdst;
+	unsigned char	*psrc;
 
-	i = 0;
-	p = (unsigned char *)b;
-	while (i < len)
-		p[i++] = (unsigned char)c;
-	return (b);
+	pdst = (unsigned char *)dst;
+	psrc = (unsigned char *)src;
+	if (!dst)
+		return (NULL);
+	while (n-- && psrc)
+		*pdst++ = *psrc++;
+	return (dst);
 }
 */
