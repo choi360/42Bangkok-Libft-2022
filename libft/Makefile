@@ -6,7 +6,7 @@
 #    By: kmethawa <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/02/21 23:20:55 by kmethawa          #+#    #+#              #
-#    Updated: 2022/02/23 22:03:31 by kmethawa         ###   ########.fr        #
+#    Updated: 2022/02/24 00:29:19 by kmethawa         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,7 +19,8 @@ SRCS = ft_isalpha.c \
        ft_memset.c \
        ft_bzero.c \
        ft_memcpy.c \
-       ft_memmove.c
+       ft_memmove.c \
+       ft_strlcpy.c
 
 NAME = libft.a
 
