@@ -6,13 +6,17 @@
 #    By: kmethawa <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/02/21 23:20:55 by kmethawa          #+#    #+#              #
-#    Updated: 2022/02/21 23:20:58 by kmethawa         ###   ########.fr        #
+#    Updated: 2022/02/23 18:56:22 by kmethawa         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 SRCS = ft_isalpha.c \
        ft_isalnum.c \
        ft_isdigit.c \
+       ft_isascii.c \
+       ft_isprint.c \
+       ft_strlen.c \
+       ft_memset.c
 
 NAME = libft.a
 
