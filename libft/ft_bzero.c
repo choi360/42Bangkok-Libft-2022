@@ -6,13 +6,11 @@
 /*   By: kmethawa <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/23 20:08:19 by kmethawa          #+#    #+#             */
-/*   Updated: 2022/02/23 20:11:03 by kmethawa         ###   ########.fr       */
+/*   Updated: 2022/02/23 20:27:26 by kmethawa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-void	*ft_memset(void *s, int c, size_t n);
 
 void	ft_bzero(void *s, size_t n)
 {
