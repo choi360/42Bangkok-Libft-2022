@@ -6,12 +6,12 @@
 /*   By: kmethawa <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/24 01:33:51 by kmethawa          #+#    #+#             */
-/*   Updated: 2022/02/24 19:52:18 by kmethawa         ###   ########.fr       */
+/*   Updated: 2022/02/24 20:13:01 by kmethawa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-/*
+
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 {
 	size_t	i;
@@ -33,7 +33,6 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 		return (dlen + slen);
 	return (dstsize + slen);
 }
-*/
 /*
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 {
@@ -62,29 +61,31 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 	return (nd + ft_strlen(src));
 }
 */
-
+/*
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 {
-char	*s;
-	size_t	len_dst;
+	char	*s;
+	size_t	dlen;
+	size_t	slen;
 	size_t	res;
-	size_t	len_src;
 	size_t	i;
 
 	s = (char *)src;
-	len_dst = ft_strlen(dst);
-	len_src = ft_strlen(s);
+	dlen = ft_strlen(dst);
+	slen = ft_strlen(s);
 	res = 0;
 	i = 0;
-	if (size > len_dst)
-		res = len_src + len_dst;
+	if (dstsize > dlen)
+		res = slen + dlen;
 	else
-		res = len_src + size;
-	while (s[i] && (len_dst + 1) < size)
+		res = slen + dstsize;
+	while (s[i] && (dlen + 1) < dstsize)
 	{
-		dst[len_dst] = s[i];
-		len_dst++;
+		dst[dlen] = s[i];
+		dlen++;
 		i++;
 	}
-	dst[len_dst] = '\0';
+	dst[dlen] = '\0';
 	return (res);
+}
+*/
