@@ -6,7 +6,7 @@
 /*   By: kmethawa <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/24 01:33:51 by kmethawa          #+#    #+#             */
-/*   Updated: 2022/02/24 19:42:20 by kmethawa         ###   ########.fr       */
+/*   Updated: 2022/02/24 19:52:18 by kmethawa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,8 +34,8 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 	return (dstsize + slen);
 }
 */
-
-size_t  ft_strlcat(char *dst, const char *src, size_t dstsize)
+/*
+size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 {
 	size_t		n;
 	size_t		nd;
@@ -45,10 +45,10 @@ size_t  ft_strlcat(char *dst, const char *src, size_t dstsize)
 	pdst = dst;
 	psrc = src;
 	nd = 0;
-	n = size;
+	n = dstsize;
 	while (*(pdst + nd) && n--)
 		nd++;
-	n = size - nd;
+	n = dstsize - nd;
 	pdst = pdst + nd;
 	if (n == 0)
 		return (nd + ft_strlen(src));
@@ -61,3 +61,7 @@ size_t  ft_strlcat(char *dst, const char *src, size_t dstsize)
 	*pdst = '\0';
 	return (nd + ft_strlen(src));
 }
+*/
+
+size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
+{
