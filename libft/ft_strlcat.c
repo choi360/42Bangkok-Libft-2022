@@ -6,12 +6,12 @@
 /*   By: kmethawa <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/24 01:33:51 by kmethawa          #+#    #+#             */
-/*   Updated: 2022/02/24 02:05:59 by kmethawa         ###   ########.fr       */
+/*   Updated: 2022/02/24 19:42:20 by kmethawa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
+/*
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 {
 	size_t	i;
@@ -32,4 +32,32 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 	if (dlen < dstsize)
 		return (dlen + slen);
 	return (dstsize + slen);
+}
+*/
+
+size_t  ft_strlcat(char *dst, const char *src, size_t dstsize)
+{
+	size_t		n;
+	size_t		nd;
+	char		*pdst;
+	char const	*psrc;
+
+	pdst = dst;
+	psrc = src;
+	nd = 0;
+	n = size;
+	while (*(pdst + nd) && n--)
+		nd++;
+	n = size - nd;
+	pdst = pdst + nd;
+	if (n == 0)
+		return (nd + ft_strlen(src));
+	while (n != 1 && *psrc)
+	{
+		*pdst++ = *psrc;
+		n--;
+		psrc++;
+	}
+	*pdst = '\0';
+	return (nd + ft_strlen(src));
 }
