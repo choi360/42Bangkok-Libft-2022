@@ -3,7 +3,7 @@ $> hostname; uname -msr
 z3t4c2.42bangkok.com
 Darwin 19.6.0 x86_64
 $> date
-Thu Feb 24 20:13:08 +07 2022
+Wed Mar 16 01:01:34 +07 2022
 $> gcc --version
 Apple clang version 12.0.0 (clang-1200.0.32.28)
 Target: x86_64-apple-darwin19.6.0
@@ -29,7 +29,7 @@ $> norminette libft.h | grep -E '(Error|Warning)'
 $> make re
 
 $> ls -la libft.a
--rw-r--r--  1 kmethawa  2021_bangkok  10096 Feb 24 20:13 /Users/kmethawa/42bangkok-libft/libft_test/tmp_tests_dir/libft.a
+-rw-r--r--  1 kmethawa  2021_bangkok  14216 Mar 16 01:01 /Users/kmethawa/42bangkok-libft/libft_test/tmp_tests_dir/libft.a
 
 = Part1_functions ==============================================================
 
@@ -336,7 +336,39 @@ $> diff -U 3 user_output_test04 test04.output
 Diff OK :D
 
 = ft_strchr ====================================================================
-Nothing turned in
+$> norminette ft_strchr.c | grep -E '(Error|Warning)'
+$> gcc -Wextra -Wall -Werror /Users/kmethawa/42bangkok-libft/libft_test/tests/Part1_functions/ft_strchr/main.c -L/Users/kmethawa/42bangkok-libft/libft_test/tmp_tests_dir -lft -I/Users/kmethawa/42bangkok-libft/libft_test/tmp_tests_dir
+
+= Test 1 ===================================================
+$> ./user_exe 01
+$> diff -U 3 user_output_test01 test01.output
+
+Diff OK :D
+= Test 2 ===================================================
+$> ./user_exe 02
+$> diff -U 3 user_output_test02 test02.output
+
+Diff OK :D
+= Test 3 ===================================================
+$> ./user_exe 03
+$> diff -U 3 user_output_test03 test03.output
+
+Diff OK :D
+= Test 4 ===================================================
+$> ./user_exe 04
+$> diff -U 3 user_output_test04 test04.output
+
+Diff OK :D
+= Test 5 ===================================================
+$> ./user_exe 05
+$> diff -U 3 user_output_test05 test05.output
+
+Diff OK :D
+= Test 6 ===================================================
+$> ./user_exe 06
+$> diff -U 3 user_output_test06 test06.output
+
+Diff OK :D
 
 = ft_strdup ====================================================================
 Nothing turned in
@@ -457,19 +489,192 @@ $> diff -U 3 user_output_test06 test06.output
 Diff OK :D
 
 = ft_strncmp ===================================================================
-Nothing turned in
+$> norminette ft_strncmp.c | grep -E '(Error|Warning)'
+$> gcc -Wextra -Wall -Werror /Users/kmethawa/42bangkok-libft/libft_test/tests/Part1_functions/ft_strncmp/main.c -L/Users/kmethawa/42bangkok-libft/libft_test/tmp_tests_dir -lft -I/Users/kmethawa/42bangkok-libft/libft_test/tmp_tests_dir
+
+= Test 1 ===================================================
+$> ./user_exe 01
+$> diff -U 3 user_output_test01 test01.output
+
+Diff OK :D
+= Test 2 ===================================================
+$> ./user_exe 02
+$> diff -U 3 user_output_test02 test02.output
+
+Diff OK :D
+= Test 3 ===================================================
+$> ./user_exe 03
+$> diff -U 3 user_output_test03 test03.output
+
+Diff OK :D
+= Test 4 ===================================================
+$> ./user_exe 04
+$> diff -U 3 user_output_test04 test04.output
+
+Diff OK :D
+= Test 5 ===================================================
+$> ./user_exe 05
+$> diff -U 3 user_output_test05 test05.output
+
+Diff OK :D
+= Test 6 ===================================================
+$> ./user_exe 06
+$> diff -U 3 user_output_test06 test06.output
+
+Diff OK :D
+= Test 7 ===================================================
+$> ./user_exe 07
+$> diff -U 3 user_output_test07 test07.output
+
+Diff OK :D
+= Test 8 ===================================================
+$> ./user_exe 08
+$> diff -U 3 user_output_test08 test08.output
+
+Diff OK :D
+= Test 9 ===================================================
+$> ./user_exe 09
+$> diff -U 3 user_output_test09 test09.output
+
+Diff OK :D
+= Test 10 ==================================================
+$> ./user_exe 10
+$> diff -U 3 user_output_test10 test10.output
+
+Diff OK :D
+= Test 11 ==================================================
+$> ./user_exe 11
+$> diff -U 3 user_output_test11 test11.output
+
+Diff OK :D
 
 = ft_strnstr ===================================================================
 Nothing turned in
 
 = ft_strrchr ===================================================================
-Nothing turned in
+$> norminette ft_strrchr.c | grep -E '(Error|Warning)'
+$> gcc -Wextra -Wall -Werror /Users/kmethawa/42bangkok-libft/libft_test/tests/Part1_functions/ft_strrchr/main.c -L/Users/kmethawa/42bangkok-libft/libft_test/tmp_tests_dir -lft -I/Users/kmethawa/42bangkok-libft/libft_test/tmp_tests_dir
+
+= Test 1 ===================================================
+$> ./user_exe 01
+$> diff -U 3 user_output_test01 test01.output
+
+Diff OK :D
+= Test 2 ===================================================
+$> ./user_exe 02
+$> diff -U 3 user_output_test02 test02.output
+
+Diff OK :D
+= Test 3 ===================================================
+$> ./user_exe 03
+$> diff -U 3 user_output_test03 test03.output
+
+Diff OK :D
+= Test 4 ===================================================
+$> ./user_exe 04
+$> diff -U 3 user_output_test04 test04.output
+
+Diff OK :D
+= Test 5 ===================================================
+$> ./user_exe 05
+$> diff -U 3 user_output_test05 test05.output
+
+Diff OK :D
+= Test 6 ===================================================
+$> ./user_exe 06
+$> diff -U 3 user_output_test06 test06.output
+
+Diff OK :D
+= Test 7 ===================================================
+$> ./user_exe 07
+$> diff -U 3 user_output_test07 test07.output
+
+Diff OK :D
+= Test 8 ===================================================
+$> ./user_exe 08
+$> diff -U 3 user_output_test08 test08.output
+
+Diff OK :D
 
 = ft_tolower ===================================================================
-Nothing turned in
+$> norminette ft_tolower.c | grep -E '(Error|Warning)'
+$> gcc -Wextra -Wall -Werror /Users/kmethawa/42bangkok-libft/libft_test/tests/Part1_functions/ft_tolower/main.c -L/Users/kmethawa/42bangkok-libft/libft_test/tmp_tests_dir -lft -I/Users/kmethawa/42bangkok-libft/libft_test/tmp_tests_dir
+
+= Test 1 ===================================================
+$> ./user_exe 01
+$> diff -U 3 user_output_test01 test01.output
+
+Diff OK :D
+= Test 2 ===================================================
+$> ./user_exe 02
+$> diff -U 3 user_output_test02 test02.output
+
+Diff OK :D
+= Test 3 ===================================================
+$> ./user_exe 03
+$> diff -U 3 user_output_test03 test03.output
+
+Diff OK :D
+= Test 4 ===================================================
+$> ./user_exe 04
+$> diff -U 3 user_output_test04 test04.output
+
+Diff OK :D
+= Test 5 ===================================================
+$> ./user_exe 05
+$> diff -U 3 user_output_test05 test05.output
+
+Diff OK :D
+= Test 6 ===================================================
+$> ./user_exe 06
+$> diff -U 3 user_output_test06 test06.output
+
+Diff OK :D
+= Test 7 ===================================================
+$> ./user_exe 07
+$> diff -U 3 user_output_test07 test07.output
+
+Diff OK :D
 
 = ft_toupper ===================================================================
-Nothing turned in
+$> norminette ft_toupper.c | grep -E '(Error|Warning)'
+$> gcc -Wextra -Wall -Werror /Users/kmethawa/42bangkok-libft/libft_test/tests/Part1_functions/ft_toupper/main.c -L/Users/kmethawa/42bangkok-libft/libft_test/tmp_tests_dir -lft -I/Users/kmethawa/42bangkok-libft/libft_test/tmp_tests_dir
+
+= Test 1 ===================================================
+$> ./user_exe 01
+$> diff -U 3 user_output_test01 test01.output
+
+Diff OK :D
+= Test 2 ===================================================
+$> ./user_exe 02
+$> diff -U 3 user_output_test02 test02.output
+
+Diff OK :D
+= Test 3 ===================================================
+$> ./user_exe 03
+$> diff -U 3 user_output_test03 test03.output
+
+Diff OK :D
+= Test 4 ===================================================
+$> ./user_exe 04
+$> diff -U 3 user_output_test04 test04.output
+
+Diff OK :D
+= Test 5 ===================================================
+$> ./user_exe 05
+$> diff -U 3 user_output_test05 test05.output
+
+Diff OK :D
+= Test 6 ===================================================
+$> ./user_exe 06
+$> diff -U 3 user_output_test06 test06.output
+
+Diff OK :D
+= Test 7 ===================================================
+$> ./user_exe 07
+$> diff -U 3 user_output_test07 test07.output
+
+Diff OK :D
 
 = Part2_functions ==============================================================
 

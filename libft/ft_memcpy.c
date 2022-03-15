@@ -6,12 +6,25 @@
 /*   By: kmethawa <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/23 21:32:49 by kmethawa          #+#    #+#             */
-/*   Updated: 2022/02/23 21:58:14 by kmethawa         ###   ########.fr       */
+/*   Updated: 2022/03/10 17:11:19 by kmethawa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+void	*ft_memcpy(void *dst, const void *src, size_t n)
+{
+	size_t	i;
+
+	i = 0;
+	while (i < n)
+	{
+		((unsigned char *) dst)[i] = ((unsigned char *) src)[i];
+		i++;
+	}
+	return (dst);
+}
+/*
 void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
 	char		*d;
@@ -26,6 +39,7 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	}
 	return (dst);
 }
+*/
 /*
 void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
