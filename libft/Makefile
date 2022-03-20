@@ -6,7 +6,7 @@
 #    By: kmethawa <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/02/21 23:20:55 by kmethawa          #+#    #+#              #
-#    Updated: 2022/03/21 00:35:42 by kmethawa         ###   ########.fr        #
+#    Updated: 2022/03/21 00:42:47 by kmethawa         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -33,7 +33,8 @@ SRCS = ft_isalpha.c \
        ft_atoi.c \
        ft_strtrim.c \
        ft_substr.c \
-       ft_calloc.c
+       ft_calloc.c \
+       ft_strdup.c
 
 NAME = libft.a
 
