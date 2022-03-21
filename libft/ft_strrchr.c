@@ -6,7 +6,7 @@
 /*   By: kmethawa <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/16 00:29:43 by kmethawa          #+#    #+#             */
-/*   Updated: 2022/03/16 00:40:06 by kmethawa         ###   ########.fr       */
+/*   Updated: 2022/03/21 23:32:54 by kmethawa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ char	*ft_strrchr(const char *s, int c)
 	i = ft_strlen(s);
 	while (i >= 0)
 	{
-		if (s[i] == c)
+		if (s[i] == (unsigned char) c)
 			return ((char *)&s[i]);
 		i--;
 	}
