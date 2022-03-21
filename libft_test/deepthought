@@ -3,7 +3,7 @@ $> hostname; uname -msr
 z3t4c2.42bangkok.com
 Darwin 19.6.0 x86_64
 $> date
-Mon Mar 21 18:26:14 +07 2022
+Mon Mar 21 23:04:57 +07 2022
 $> gcc --version
 Apple clang version 12.0.0 (clang-1200.0.32.28)
 Target: x86_64-apple-darwin19.6.0
@@ -29,7 +29,7 @@ $> norminette libft.h | grep -E '(Error|Warning)'
 $> make re
 
 $> ls -la libft.a
--rw-r--r--  1 kmethawa  2021_bangkok  29736 Mar 21 18:26 /Users/kmethawa/42bangkok-libft/libft_test/tmp_tests_dir/libft.a
+-rw-r--r--  1 kmethawa  2021_bangkok  31720 Mar 21 23:04 /Users/kmethawa/42bangkok-libft/libft_test/tmp_tests_dir/libft.a
 
 = Part1_functions ==============================================================
 
@@ -1116,7 +1116,34 @@ $> diff -U 3 user_output_test04 test04.output
 Diff OK :D
 
 = ft_split =====================================================================
-Nothing turned in
+$> norminette ft_split.c | grep -E '(Error|Warning)'
+$> gcc -Wextra -Wall -Werror /Users/kmethawa/42bangkok-libft/libft_test/tests/Part2_functions/ft_split/main.c -L/Users/kmethawa/42bangkok-libft/libft_test/tmp_tests_dir -lft -I/Users/kmethawa/42bangkok-libft/libft_test/tmp_tests_dir
+
+= Test 1 ===================================================
+$> ./user_exe 01
+$> diff -U 3 user_output_test01 test01.output
+
+Diff OK :D
+= Test 2 ===================================================
+$> ./user_exe 02
+$> diff -U 3 user_output_test02 test02.output
+
+Diff OK :D
+= Test 3 ===================================================
+$> ./user_exe 03
+$> diff -U 3 user_output_test03 test03.output
+
+Diff OK :D
+= Test 4 ===================================================
+$> ./user_exe 04
+$> diff -U 3 user_output_test04 test04.output
+
+Diff OK :D
+= Test 5 ===================================================
+$> ./user_exe 05
+$> diff -U 3 user_output_test05 test05.output
+
+Diff OK :D
 
 = ft_strjoin ===================================================================
 $> norminette ft_strjoin.c | grep -E '(Error|Warning)'

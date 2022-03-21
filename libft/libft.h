@@ -6,7 +6,7 @@
 /*   By: kmethawa <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/21 23:21:32 by kmethawa          #+#    #+#             */
-/*   Updated: 2022/03/21 17:59:25 by kmethawa         ###   ########.fr       */
+/*   Updated: 2022/03/21 18:35:45 by kmethawa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,5 +50,6 @@ char	*ft_strdup(const char *s1);
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 char	*ft_strjoin(char const *s1, char const *s2);
 char	*ft_itoa(int n);
+char	**ft_split(char const *s, char c);
 
 #endif

@@ -6,7 +6,7 @@
 #    By: kmethawa <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/02/21 23:20:55 by kmethawa          #+#    #+#              #
-#    Updated: 2022/03/21 17:59:05 by kmethawa         ###   ########.fr        #
+#    Updated: 2022/03/21 18:34:55 by kmethawa         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -42,7 +42,8 @@ SRCS = ft_isalpha.c \
        ft_putendl_fd.c \
        ft_putstr_fd.c \
        ft_putnbr_fd.c \
-       ft_itoa.c
+       ft_itoa.c \
+       ft_split.c
 
 NAME = libft.a
 
